@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#e76f51">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="8dp"
+        tools:context=".MainActivity">
+
+        <Button
+            android:id="@+id/btn_create_random_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/randomNum"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:ignore="UsingOnClickInXml" />
+
+        <TextView
+            android:id="@+id/tv_show_random"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textColor="@color/black"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btn_create_random_num"
+            app:layout_constraintLeft_toRightOf="@id/btn_create_random_num"
+            app:layout_constraintTop_toTopOf="@id/btn_create_random_num" />
+
+        <Button
+            android:id="@+id/btn_create_random_num2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/randomNum2"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_create_random_num"
+            tools:ignore="UsingOnClickInXml" />
+
+        <TextView
+            android:id="@+id/tv_show_random2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btn_create_random_num2"
+            app:layout_constraintLeft_toRightOf="@id/btn_create_random_num2"
+            app:layout_constraintTop_toTopOf="@id/btn_create_random_num2" />
+
+        <Button
+            android:id="@+id/btn_data_transform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dataTransform"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_create_random_num2"
+            tools:ignore="UsingOnClickInXml" />
+
+        <TextView
+            android:id="@+id/tv_data_transform"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btn_data_transform"
+            app:layout_constraintLeft_toRightOf="@id/btn_data_transform"
+            app:layout_constraintTop_toTopOf="@id/btn_data_transform" />
+
+        <Button
+            android:id="@+id/btn_data_transform2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/dataTransform2"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_data_transform"
+            tools:ignore="UsingOnClickInXml" />
+
+        <TextView
+            android:id="@+id/tv_data_transform2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/btn_data_transform2"
+            app:layout_constraintLeft_toRightOf="@id/btn_data_transform2"
+            app:layout_constraintTop_toTopOf="@id/btn_data_transform2" />
+
+        <Button
+            android:id="@+id/btn_mediator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/mediator"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btn_data_transform2"
+            tools:ignore="UsingOnClickInXml" />
+
+        <TextView
+            android:id="@+id/tv_mediator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/btn_mediator"
+            app:layout_constraintTop_toBottomOf="@id/btn_mediator" />
+
+        <Button
+            android:id="@+id/btn_coroutine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/coroutine"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_mediator"
+            tools:ignore="UsingOnClickInXml" />
+
+        <TextView
+            android:id="@+id/tv_coroutine"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="12dp"
+            android:background="#e9c46a"
+            android:ellipsize="end"
+            android:maxLines="6"
+            android:textSize="8sp"
+            android:textStyle="bold"
+            app:layout_constraintLeft_toLeftOf="@id/btn_coroutine"
+            app:layout_constraintTop_toBottomOf="@id/btn_coroutine" />
+
+        <Button
+            android:id="@+id/btn_testViewModel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/testViewModel"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_coroutine"
+            tools:ignore="UsingOnClickInXml" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.core.widget.NestedScrollView>

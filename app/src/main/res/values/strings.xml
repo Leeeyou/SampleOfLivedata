@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">SampleLivedata</string>
+
+    <string name="randomNum">① show random num ➡️ use LiveData alone</string>
+    <string name="randomNum2">② show random num ➡️ ViewModel</string>
+    <string name="dataTransform">③ data transform ➡️ map</string>
+    <string name="dataTransform2">④ data transform ➡️ switchMap</string>
+    <string name="mediator">⑤ mediator</string>
+    <string name="coroutine">⑥ coroutine</string>
+    <string name="testViewModel">⑦ testViewModel</string>
+
+</resources>
